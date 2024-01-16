@@ -7,10 +7,10 @@ import java.util.Scanner
 fun createNote(): Note {
     val input = Scanner(System.`in`)
 
-    println("Введите имя записки")
+    println("Введите имя заметки")
     val noteName = input.nextLine()
     val noteToAdd = Note(noteName, "")
-    println("Введите текст записки")
+    println("Введите текст заметки")
     noteToAdd.text = input.nextLine()
     return noteToAdd
 }
@@ -21,6 +21,5 @@ fun createArchive(): Archive {
     println("Введите имя архива")
     val archname = input.nextLine()
     val archiveToAdd = Archive(archname, mutableListOf())
-    //input.close()
     return archiveToAdd
 }
